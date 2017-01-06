@@ -1,8 +1,113 @@
-<object data="untitled.pdf" type="application/pdf" width="100%" height="100%">
+<html>
+<style>
 
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="myfile.pdf">click here to
-  download the PDF file.</a></p>
+    .container-fluid{
+        background-color: #1B1B1D;
+    }
+    #light{
+        height:150px;
+        width: 150px;
+    }
+    #dark {
+        height:150px;
+        width: 150px;
+    }
+    #light{
+        height:150px;
+        width: 150px;
+    }
+    #profilSide{
+        color:#f9f2f4;
 
-</object>
+    }
+    #name{
+        margin-left: 30px;
+    }
+    .vertical-center {
+        min-height: 100%;  /* Fallback for vh unit */
+        min-height: 100vh; /* You might also want to use
+                        'height' property instead.
 
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+        /* Make it a flex container */
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        /* Align the bootstrap's container vertically */
+        -webkit-box-align : center;
+        -webkit-align-items : center;
+        -moz-box-align : center;
+        -ms-flex-align : center;
+        align-items : center;
+
+        /* In legacy web browsers such as Firefox 9
+           we need to specify the width of the flex container */
+        width: 100%;
+
+        /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+           hence the bootstrap's container won't be aligned to the center anymore.
+
+           Therefore, we should use the following declarations to get it centered again */
+        -webkit-box-pack : center;
+        -moz-box-pack : center;
+        -ms-flex-pack : center;
+        -webkit-justify-content : center;
+        justify-content : center;
+    }
+
+</style>
+<head>
+    <script src="https://use.fontawesome.com/2f310e2912.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid vertical-center">
+    <div class="row vertical-center">
+            <div  class="col-sm-4 text-center" id ="cvSide">
+               <a href="berkaay.github.io/cv"> <img id="light" src="img/cv.png"> </a>
+            </div>
+            <div class="col-sm-2 text-center" id ="profilSide">
+                   <div class="col-md-12 text-center " id="name" ><i class="fa fa-male fa-2x fa-pull-left"> Berkay Öztürk </i></div>
+                <img src="img/profil.png" img-circle><br/>
+                <div class = "col-md-12" id="bullshitAboutMe">
+                    Bilkent University Undergraduate Student</br>
+                    Junior @ Information Technology
+                    I’m (trying2be) a Game Developer living in Ankara, Türkiye.
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <ul class="social list-inline">
+                        <li class="reddit"><a href="http://reddit.com/u/berkaay"><i class="fa fa-reddit fa-3x"></i></a></li>
+                        <li class="twitter"><a href="http://twitter.com/beeerkaay"><i class="fa fa-twitter fa-3x"></i></a></li>
+                        <li class="pinterest"><a href="http://www.github.com/berkaay"><i class="fa fa-github fa-3x"></i></a></li>
+                        <li class="behance"><a href="https://berkaay.itch.io"><i class="fa fa-gamepad fa-3x"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-sm-4 text-center" id ="gameSide" >
+              <a href="berkaay.github.io/Gravy">  <img id ="dark" src="img/game-controller-icon-png-10.png"> </a>
+            </div>
+
+    </div>
+</div>
+</body>
+</html>
